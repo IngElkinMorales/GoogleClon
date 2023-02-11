@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+    --backGroundColor:  rgb(34, 34, 34);
+    --backGroundColor1:  rgb(87, 86, 86);
+    --borderColor: #dfe1e5;
+    --GreenFont: #50e85f 
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+header {
+    width: 100%;
+    height: 60px;
+    padding-top: 10px;
+    background-color: var(--backGroundColor);
+}
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+header nav .navSectionRight {
+    width: 250px;
+    height: auto;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .navSectionRight a {
+    margin-right: 10px;
+    color: black;
+    font-size: 13px;
+    color: var(--GreenFont);
+}
+nav .navSectionRight .menuIcon {
+    background-image: url('./assets/google-menu-icon.jpg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+}
+nav .navSectionRight img {
+    border-radius: 50%;
+    margin-left: 10px;
+}
+body {
+    background-color: var(--backGroundColor);
+}
+main {
+    margin-top: 50px;
+    text-align: center;
+}
+main .LogoGoogle {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .LogoGoogle img {
+    width: 272px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+main .ContenerdorPrincipal {
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+main .ContenedorInputPrincipal {
+    width: 480px;
+    border-radius: 100px;
+    border: 1px solid var(--borderColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+} 
+main .ContenedorInputPrincipal input {
+    width: 450px;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+main .ContenedorInputPrincipal:hover {
+    box-shadow: 0 4px 6px 0 var(--GreenFont);
+    border-color: #dfe1e500;
+}
+main .ContenedorInputPrincipal .iconoLupa {
+    background-image: url('./assets/LupaDeGoogle.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    padding-left: 45px;
+}
+main .ContenedorInputPrincipal .IconoMicrofono {
+    background-image: url('./assets/MicrofonoDeGoogleLens.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+main .ContenedorInputPrincipal .IconoCamaralens {
+    background-image: url('./assets/CamaraGoogleLens.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    padding-right: 45px;
+}
+main .BotonesPrincipales {
+    width: 480px;
+    margin: 0 auto;
+}
+main .BotonesPrincipales div {
+    display: inline-block;
+}
+main .BotonesPrincipales button {
+    background-color: var(--backGroundColor1);
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: var(--GreenFont);
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+main .BotonesPrincipales button:hover {
+    box-shadow: 0 3px 3px var(--GreenFont);
+    background-color: var(--backGroundColor);
+    border: 1px solid #dadce0;
+    color: var(--GreenFont);
+}
+footer {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 13px;
+    background-color: var(--backGroundColor1);
+    border-top: 1px solid #dadce0 ;
+}
+footer ul {
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+footer .footerLeft {
+    justify-self: left;
+}
+footer .footerRight {
+    justify-self: right;
+}
+footer ul li a {
+    margin: 10px;
+    color: var(--GreenFont);
+}
